@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+body{
+    background-color: #03483d;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    /* border: 2px solid black; */
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: cyan;
+    box-shadow: 0 0 15px cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    font-size: 3rem;
+    color: #000000;
+}
+
+p{
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    height: 1.5rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 60%;
+    height: 32px;
+    margin: .5rem;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 3px black;
+    background-color: #03483d;
+    cursor: pointer;
+    padding: 16px 20px;
+}
+
+
+.results{
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    height: 1.5rem;
+}
+
+.result{
+    margin-right: 1rem;
+}
+
+.anm{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.anm.anm2{
+    opacity: 1;
+}
+
+@media screen and (max-width:500px) {
+    *{
+        text-wrap: nowrap;
+    }
+    .card{
+        width: 80%;
+    }
+}
